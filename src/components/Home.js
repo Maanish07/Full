@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <Layout>
       <Intro />
-      <Slick />
+
       <About />
       <Work />
 

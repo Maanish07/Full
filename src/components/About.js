@@ -1,28 +1,22 @@
 import React from "react";
 
-
-
 function About() {
   return (
-    <>
-      <div id="about" className="mt-10 max-w-7xl mx-auto  px-1">
-        
-        
-        <h2 className="text-2xl font-bold mb-8">About.</h2>
-        
-          <p className="text-gray-900">
-          I am an experienced problem solver on LeetCode, having successfully
-            tackled over 500 questions. Proficient in diverse technologies
-            including C++, C, Python, Java, JavaScript, HTML, CSS, React, and
-            databases. My expertise extends to robust knowledge of data
-            structures and algorithms. With a versatile skill set, I bring a
-            strong foundation in programming and problem-solving to any project
-            or team.
-          </p>
-          
-        
-      </div>
-    </>
+    <div id="about" className="mt-10 max-w-7xl mx-auto px-4 sm:px-6 ">
+      <h2 className="text-2xl font-bold mb-6 sm:text-3xl sm:mb-8">About.</h2>
+
+      <p className="text-gray-900 text-base sm:text-lg lg:text-xl leading-relaxed">
+        I am Manish Kumar, an experienced MERN Developer based in Dehradun,
+        Uttarakhand. With a strong background in JavaScript, NodeJs, React, and
+        React Native, I specialize in developing intuitive and efficient mobile
+        applications. My portfolio includes projects like the Full Stack Food
+        Delivery website, Online Exam app, Cloud Notes app, and Noted! App,
+        where I focus on delivering high-quality, user-centric solutions. I am
+        committed to continuous learning and innovation, always striving to
+        enhance the user experience. When I'm not working on development, I
+        enjoy reading and networking to broaden my perspectives.
+      </p>
+    </div>
   );
 }
 

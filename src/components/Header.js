@@ -9,7 +9,7 @@ function Header() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
-            <Link to="/" className="flex">
+            <Link to="/" className="flex ">
               <SiBuymeacoffee className="w-8 h-8" />
 
               <h5
@@ -19,6 +19,7 @@ function Header() {
                   fontWeight: 900,
                   fontStyle: "normal",
                   color: "black",
+                  fontSize: "36px",
                 }}
               >
                 Manish Kumar.

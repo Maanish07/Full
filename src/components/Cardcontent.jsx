@@ -9,9 +9,9 @@ const Cardcontent = () =>{
           image: '/Assets/Card/leetcode.png',
         },
         {
-          title: 'Image Gallery',
-          description: 'An image gallery powered by Cloudinary.',
-          image: '/images/gallery.png',
+          title: 'Git hub',
+          description: 'Leetcode Profile Showcase my projects.',
+          image: '/Assets/Card/github.png',
         },
         {
           title: 'Next.js Commerce',
