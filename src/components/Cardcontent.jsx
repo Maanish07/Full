@@ -7,16 +7,19 @@ const Cardcontent = () =>{
           title: 'Leet Code',
           description: 'Leetcode Profile Showcase my problem solving skill.',
           image: '/Assets/Card/leetcode.png',
+          url : 'https://leetcode.com/u/Mannu_story07/',
         },
         {
           title: 'Git hub',
           description: 'Leetcode Profile Showcase my projects.',
           image: '/Assets/Card/github.png',
+          url : 'https://github.com/Maanish07'
         },
         {
           title: 'Next.js Commerce',
           description: 'An all-in-one eCommerce solution for performance.',
           image: '/images/commerce.png',
+          url : '/'
         },
       ];
     
@@ -28,6 +31,7 @@ const Cardcontent = () =>{
               title={card.title}
               description={card.description}
               image={card.image}
+              url = {card.url}
             />
           ))}
         </div>
