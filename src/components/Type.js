@@ -1,12 +1,12 @@
 import React from "react";
 import Typed from "typed.js";
 
-function Type() {
+function Type({ strings }) {
   const el = React.useRef(null);
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["React Js", "React Native", "Node Js", "Express"],
+      strings: strings,
       typeSpeed: 50,
       loop: true,
     });
@@ -14,7 +14,7 @@ function Type() {
     return () => {
       typed.destroy();
     };
-  }, []);
+  }, [strings]);
 
   return (
     <div className="App ">

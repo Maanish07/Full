@@ -10,8 +10,8 @@ const Cardcontent = () =>{
           url : 'https://leetcode.com/u/Mannu_story07/',
         },
         {
-          title: 'Git hub',
-          description: 'Leetcode Profile Showcase my projects.',
+          title: 'Github',
+          description: 'Github Profile Showcase my projects.',
           image: '/Assets/Card/github.png',
           url : 'https://github.com/Maanish07'
         },
