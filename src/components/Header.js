@@ -116,8 +116,10 @@ export default function NavbarBasic() {
             className="flex h-[5.5rem] items-stretch justify-between font-medium text-slate-700"
             role="navigation"
           >
-            {/*      <!-- Brand logo --> */}
-            <Link to="/" className="flex ">
+            <Link
+              to="/"
+              className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
+            >
               <SiBuymeacoffee className="w-8 h-8" />
 
               <h5
@@ -176,7 +178,7 @@ export default function NavbarBasic() {
                   to="about"
                   smooth={true}
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                  className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
                 >
                   About
                 </ScrollLink>

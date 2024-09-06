@@ -17,7 +17,7 @@ function Type({ strings }) {
   }, [strings]);
 
   return (
-    <div className="App ">
+    <div className="App flex align-left ">
       <span ref={el} />
     </div>
   );
