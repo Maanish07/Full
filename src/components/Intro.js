@@ -52,9 +52,9 @@ function Intro() {
                       initial="hidden"
                       animate="visible"
                       transition={{ duration: 1, delay: 0.8 }}
-                      className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl p-2 sm:p-3 md:p-4 lg:p-5"
+                      className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl p-2 sm:p-3 md:p-4 lg:p-5 text-red-500"
                     >
-                      based in Uttrakhand, India.
+                      <Type />
                     </motion.h1>
                   </div>
                 </div>
