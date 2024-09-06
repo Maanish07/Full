@@ -9,12 +9,13 @@ import Slick from "./Slick";
 import Work from "./Work";
 import Card from "./Card";
 import Cardcontent from "./Cardcontent";
+import Canvaback from "./Canvaback";
 
 const Home = () => {
   return (
     <Layout>
       <Intro />
-
+      <Canvaback />
       <About />
       <Work />
 
