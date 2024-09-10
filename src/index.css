@@ -15,8 +15,28 @@ code {
 @tailwind components;
 @tailwind utilities;
 
-
-
+@layer utilities {
+    .rfm-marquee {
+      @apply animate-marquee; /* Apply the custom animation */
+    }
+  
+    .rfm-child {
+      @apply flex items-center justify-center whitespace-nowrap pr-10; /* Child styling */
+    }
+  
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  
+    .animate-marquee {
+      animation: marquee 8s linear infinite; /* Infinite scrolling with a linear speed */
+    }
+  }
 
 
 .comp {

@@ -103,8 +103,11 @@ const Resume = () => {
             href="https://drive.google.com/file/d/1HjIldwKg5fSP_z8dS9p72XvtRofT3I41/view?usp=drivesdk"
             download="Manish_Kumar_Resume.pdf"
           >
-            <button className="items-center justify-center px-4 py-3 mt-10 text-base font-semibold text-white transition-all duration-200 bg-black border border-transparent rounded-md lg:inline-flex hover:shadow-lg hover:scale-105">
-              Download Resume
+            <button className="relative inline-flex items-center justify-center px-8 py-3 mt-10 text-base font-semibold text-white bg-black rounded hover:shadow-lg hover:scale-105 transition-transform duration-300">
+              <span className="z-10">Download Resume</span>
+
+              <span className="absolute inset-0  rounded bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 p-1.5 blur-md"></span>
+              <span className="absolute inset-0 rounded  bg-black"></span>
             </button>
           </a>
         </div>

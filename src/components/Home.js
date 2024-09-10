@@ -10,6 +10,7 @@ import Work from "./Work";
 import Card from "./Card";
 import Cardcontent from "./Cardcontent";
 import Canvaback from "./Canvaback";
+import Astro from "./Astro";
 
 const Home = () => {
   return (

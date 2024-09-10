@@ -24,14 +24,14 @@ const Cardcontent = () =>{
       ];
     
       return (
-        <div className="flex space-x-6 justify-center items-center py-8">
+        <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 justify-center items-center py-8">
           {cards.map((card, index) => (
             <Card 
               key={index}
               title={card.title}
               description={card.description}
               image={card.image}
-              url = {card.url}
+              url={card.url}
             />
           ))}
         </div>
