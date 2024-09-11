@@ -12,11 +12,11 @@ const textVariants = {
 
 function Intro() {
   const typingStrings = [
-    "React Js",
+    "React js",
     "React Native",
-    "Node Js",
-    "Express",
-    "Mongo Db",
+    "Node js",
+    "Express js",
+    "Mongo DB",
   ];
   return (
     <>

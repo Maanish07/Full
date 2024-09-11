@@ -10,11 +10,11 @@ function About() {
         Uttarakhand. With a strong background in JavaScript, NodeJs, React, and
         React Native, I specialize in developing intuitive and efficient mobile
         applications. My portfolio includes projects like the Full Stack Food
-        Delivery website, Online Exam app, Cloud Notes app, and Noted! App,
-        where I focus on delivering high-quality, user-centric solutions. I am
-        committed to continuous learning and innovation, always striving to
-        enhance the user experience. When I'm not working on development, I
-        enjoy reading and networking to broaden my perspectives.
+        Delivery website, portfolio, Book Exchnage, where I focus on delivering
+        high-quality, user-centric solutions. I am committed to continuous
+        learning and innovation, always striving to enhance the user experience.
+        When I'm not working on development, I enjoy reading and networking to
+        broaden my perspectives.
       </p>
     </div>
   );
