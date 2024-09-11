@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Layout from "./Layout";
 import About from "./About";
 import Intro from "./Intro";
@@ -11,8 +11,11 @@ import Card from "./Card";
 import Cardcontent from "./Cardcontent";
 import Canvaback from "./Canvaback";
 import Astro from "./Astro";
+import ThemeToggle from "./ThemeToggle";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Home = () => {
+  const { darkTheme } = useContext(ThemeContext);
   return (
     <Layout>
       <Intro />

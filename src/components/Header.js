@@ -2,9 +2,12 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { SiBuymeacoffee } from "react-icons/si";
 import { Link as ScrollLink } from "react-scroll";
+import { ThemeContext } from "../context/ThemeContext";
+import ThemeToggle from "./ThemeToggle";
 
 export default function NavbarBasic() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
+  const { darkTheme } = useContext(ThemeContext);
 
   return (
     <>

@@ -11,8 +11,12 @@ import Contactform from "./components/Contactform";
 import Resume from "./components/Resume";
 import Project from "./components/Project";
 import Projectcontent from "./components/Projectcontent";
+import { ThemeContext, ThemeProvider } from "./context/ThemeContext";
+import ThemeToggle from "./components/ThemeToggle";
+import { useContext } from "react";
 
 function App() {
+  const { darkTheme } = useContext(ThemeContext);
   return (
     <>
       <BrowserRouter>

@@ -12,12 +12,7 @@ const Projectcontent = () =>{
           image: '/Assets/Card/food.png',
           url : 'https://manish-gwap.vercel.app/',
         },
-        {
-          title: 'Github',
-          description: 'Github Profile Showcase my projects.',
-          image: '/Assets/Card/github.png',
-          url : 'https://github.com/Maanish07'
-        },
+        
         {
           title: 'Portfolio | React',
           description: 'Build a Portfolio in react js , which so case my hand on experience , projects and Links of my social.',

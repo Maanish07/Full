@@ -22,7 +22,7 @@ const Timeline = () => {
               </span>
               <div class="ml-12 w-auto pt-1">
                 <h6 class="text-xl font-semibold text-black">
-                  Btech in Computer Science,Graphic era hill university
+                  B.Tech in Computer Science,Graphic era hill university
                   ,Dehradun
                 </h6>
                 <p class="mt-1 text-xs text-gray-500">2019-2023</p>
@@ -34,7 +34,7 @@ const Timeline = () => {
               </span>
               <div class="ml-12 w-auto pt-1">
                 <h6 class="text-xl font-semibold text-black">
-                  M.R.J.D Inter college, Begusarai (Bihar)
+                  High School ,M.R.J.D Inter college, Begusarai (Bihar)
                 </h6>
                 <p class="mt-1 text-xs text-gray-500">2016-2018</p>
               </div>
