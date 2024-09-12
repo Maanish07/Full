@@ -19,6 +19,18 @@ const Projectcontent = () =>{
           image: '/Assets/Card/resume.png',
           url : 'https://full-nu.vercel.app/'
         },
+        {
+          title: 'Book Exchnage website | React',
+          description: 'Build a website where Some one can exchnage their book',
+          image: '/Assets/Card/book.png',
+          url : '/'
+        },
+        {
+          title: 'Face Recognisation Attendance System | Machine Learning | Python',
+          description: 'Build a website where Some one can exchnage their book',
+          image: '/Assets/Card/face.png',
+          url : '/'
+        },
       ];
     return (
         <>

@@ -22,23 +22,20 @@ function Intro() {
     <>
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 px-4">
         {" "}
-        {/* Added px-4 for mobile padding */}
         <div className="flex flex-col items-center justify-center">
           <div className="w-full">
             <div className="i-left">
               <div className="flex flex-col lg:flex-row items-center">
                 {" "}
-                {/* Adjust to column on mobile */}
                 <div className="i-left-wrapper">
-                  <div className="mt-4 sm:mt-6 lg:mt-12">
+                  <div className="mt-4 sm:mt-6 lg:mt-12n text-center sm:text-left">
                     {" "}
-                    {/* Adjusted top margin for mobile */}
                     <motion.h1
                       variants={textVariants}
                       initial="hidden"
                       animate="visible"
                       transition={{ duration: 1, delay: 0.2 }}
-                      className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl p-1 sm:p-2 md:p-3 lg:p-4" // Reduced text sizes and padding
+                      className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl p-1 sm:p-2 md:p-3 lg:p-4"
                     >
                       Hello{" "}
                       <motion.span
@@ -58,16 +55,16 @@ function Intro() {
                       initial="hidden"
                       animate="visible"
                       transition={{ duration: 1, delay: 0.4 }}
-                      className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl p-1 sm:p-2 md:p-3 lg:p-4"
+                      className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl p-1 sm:p-2 md:p-3 lg:p-4"
                     >
-                      I'm Manish Kumar - Curious
+                      <span>I'm Manish Kumar - Curious</span>
                     </motion.h1>
                     <motion.h1
                       variants={textVariants}
                       initial="hidden"
                       animate="visible"
                       transition={{ duration: 1, delay: 0.6 }}
-                      className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl p-1 sm:p-2 md:p-3 lg:p-4"
+                      className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl p-1 sm:p-2 md:p-3 lg:p-4"
                     >
                       Designer & Developer
                     </motion.h1>
@@ -76,9 +73,9 @@ function Intro() {
                       initial="hidden"
                       animate="visible"
                       transition={{ duration: 1, delay: 0.8 }}
-                      className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl p-1 sm:p-2 md:p-3 lg:p-4"
+                      className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl p-1 sm:p-2 md:p-3 lg:p-4 "
                       style={{
-                        color: "#3c81f7",
+                        color: "#69ccce",
                       }}
                     >
                       <Type strings={typingStrings} />
@@ -87,12 +84,11 @@ function Intro() {
                 </div>
                 <div className="mt-4 lg:mt-0">
                   {" "}
-                  {/* Add margin-top on mobile */}
                   <Window />
                 </div>
               </div>
 
-              <div className="mt-4 sm:mt-6 lg:mt-12">
+              <div className="mt-4 sm:mt-6 lg:mt-12 flex justify-center sm:justify-start">
                 <Links />
               </div>
             </div>

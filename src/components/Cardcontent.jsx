@@ -16,10 +16,10 @@ const Cardcontent = () =>{
           url : 'https://github.com/Maanish07'
         },
         {
-          title: 'Next.js Commerce',
-          description: 'An all-in-one eCommerce solution for performance.',
-          image: '/images/commerce.png',
-          url : '/'
+          title: 'Geeks for Geeks',
+          description: 'GFG Profile Showcase my problem solving skill.',
+          image: '/Assets/Card/gfg.png',
+          url : 'https://www.geeksforgeeks.org/user/mannu_story07/'
         },
       ];
     

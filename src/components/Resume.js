@@ -21,8 +21,9 @@ const Resume = () => {
                 with a strong understanding of modern development frameworks and
                 UI/UX design principles...
               </p>
-              {/* Social Links */}
-              <Links />
+              <div className="mt-4 sm:mt-6 lg:mt-12 flex justify-center">
+                <Links />
+              </div>
             </header>
 
             {/* Experience Section */}
@@ -36,6 +37,7 @@ const Resume = () => {
                 <ul className="list-disc ml-5 text-gray-600">
                   <li>Developed Mobile applications using React Native.</li>
                   <li>Integrated third-party APIs to enhance app features.</li>
+                  <li>Developed site in Mern</li>
                 </ul>
               </div>
             </section>
@@ -44,13 +46,10 @@ const Resume = () => {
             <section className="mb-6">
               <h2 className="text-2xl font-bold mb-4">Education</h2>
               <p className="font-bold text-lg">
-                BTech - Graphic Era Hill University, Dehradun
+                Graphic Era Hill University, Dehradun
               </p>
-              <p className="text-gray-600">2023 - 2025</p>
-              <p className="text-gray-600">
-                Focusing on advanced mobile development and software
-                engineering.
-              </p>
+              <p className="text-gray-600">2019 - 2023</p>
+              <p className="text-gray-600">B.Tech in Computer Science</p>
             </section>
 
             {/* Skills Section */}

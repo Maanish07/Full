@@ -382,3 +382,14 @@ header p {
         transform: translateX(-50%)
     }
 }
+
+
+.svg-marker path {
+    animation: dash 2s ease forwards;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

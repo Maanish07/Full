@@ -1,11 +1,13 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { SiBuymeacoffee } from "react-icons/si";
 import { Link as ScrollLink } from "react-scroll";
 import { ThemeContext } from "../context/ThemeContext";
 import ThemeToggle from "./ThemeToggle";
 
 export default function NavbarBasic() {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   const { darkTheme } = useContext(ThemeContext);
 
@@ -76,36 +78,40 @@ export default function NavbarBasic() {
                   : "invisible opacity-0"
               }`}
             >
-              <li role="none" className="flex items-stretch">
-                <ScrollLink
-                  to="about"
-                  smooth={true}
-                  aria-haspopup="false"
-                  className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                >
-                  About
-                </ScrollLink>
-              </li>
-              <li role="none" className="flex items-stretch">
-                <ScrollLink
-                  to="work"
-                  smooth={true}
-                  aria-haspopup="false"
-                  className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                >
-                  Work
-                </ScrollLink>
-              </li>
-              <li role="none" className="flex items-stretch">
-                <ScrollLink
-                  to="education"
-                  smooth={true}
-                  aria-haspopup="false"
-                  className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                >
-                  Education
-                </ScrollLink>
-              </li>
+              {isHomePage && (
+                <>
+                  <li role="none" className="flex items-stretch">
+                    <ScrollLink
+                      to="about"
+                      smooth={true}
+                      aria-haspopup="false"
+                      className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                    >
+                      About
+                    </ScrollLink>
+                  </li>
+                  <li role="none" className="flex items-stretch">
+                    <ScrollLink
+                      to="work"
+                      smooth={true}
+                      aria-haspopup="false"
+                      className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                    >
+                      Work
+                    </ScrollLink>
+                  </li>
+                  <li role="none" className="flex items-stretch">
+                    <ScrollLink
+                      to="education"
+                      smooth={true}
+                      aria-haspopup="false"
+                      className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                    >
+                      Education
+                    </ScrollLink>
+                  </li>
+                </>
+              )}
               <li role="none" className="flex items-stretch">
                 <Link
                   to="/project"

@@ -3,8 +3,7 @@ import React from "react";
 function About() {
   return (
     <div id="about" className="mt-10 max-w-7xl mx-auto px-4 sm:px-6 ">
-      <h2 className="text-2xl font-bold mb-6 sm:text-3xl sm:mb-8">About.</h2>
-
+      <h2 className="text-2xl font-bold mb-8">About.</h2>
       <p className="text-gray-900 text-base sm:text-lg lg:text-xl leading-relaxed">
         I am Manish Kumar, an experienced MERN Developer based in Dehradun,
         Uttarakhand. With a strong background in JavaScript, NodeJs, React, and

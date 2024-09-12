@@ -17,7 +17,7 @@ function Type({ strings }) {
   }, [strings]);
 
   return (
-    <div className="App flex align-left ">
+    <div className="App flex justify-center sm:justify-start items-center">
       <span ref={el} />
     </div>
   );
