@@ -4,7 +4,7 @@ import { LuSchool } from "react-icons/lu";
 const Timeline = () => {
   return (
     <div>
-      <div id="education" className="mt-10 max-w-7xl mx-auto  px-1">
+      <div id="education" className="mt-10 max-w-7xl mx-auto px-4 sm:px-6">
         <h2 className="text-2xl font-bold mb-8">Eductaion.</h2>
         <p class="mb-4 text-sm font-light">
           <i

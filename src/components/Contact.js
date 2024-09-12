@@ -13,12 +13,15 @@ function Contact() {
             LET'S WORK
           </h1>
 
-          <span class="animated-marker" style={{ "--marker-color": "#ff007c" }}>
+          <span
+            className="animated-marker"
+            style={{ "--marker-color": "#ff007c" }}
+          >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl p-2 sm:p-3 md:p-4 lg:p-5">
               TOGETHER
             </h1>
             <svg
-              class="svg-marker svg-marker--style3"
+              className="svg-marker svg-marker--style3"
               width="26%"
               height="21"
               viewBox="0 0 184 21"
@@ -29,9 +32,10 @@ function Contact() {
               <path
                 d="M2.99996 17.9626C12.8399 12.7075 30.9393 4.04876 36.8901 3.37945C42.8408 2.71013 41.6481 9.55371 38.7739 14.0685C38.0439 16.3832 40.2101 19.2307 54.715 12.1027L65.0248 7.05411C66.2099 6.45989 68.7141 6.06011 69.2498 9.21479C69.9193 13.1581 74.1326 16.5301 86.875 16.0475C99.6174 15.5649 118.079 9.0809 130.833 7.38711C143.587 5.69332 154.465 4.07802 180.617 7.35907"
                 stroke="var(--marker-color)"
-                stroke-width="6"
-                stroke-linecap="round"
-                style={{ strokeDashoffset: 0, strokeDasharray: "none" }}
+                strokeWidth="6"
+                strokeLinecap="round"
+                className="animate-dash"
+                style={{ strokeDasharray: 600, strokeDashoffset: 600 }} // initial offset to hide the stroke
               ></path>
             </svg>
           </span>

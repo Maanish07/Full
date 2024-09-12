@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -45,4 +46,14 @@
 .light-theme {
   background-color: #fff;
   color: #333;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; /* Final state: make the entire path visible */
+  }
+}
+
+.svg-marker path {
+  animation: dash 3s ease forwards; /* Animation for the stroke */
 }

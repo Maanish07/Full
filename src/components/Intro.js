@@ -20,7 +20,7 @@ function Intro() {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 px-4">
+      <div id="intro" className="max-w-7xl mx-auto sm:px-6 lg:px-8 px-4">
         {" "}
         <div className="flex flex-col items-center justify-center">
           <div className="w-full">
