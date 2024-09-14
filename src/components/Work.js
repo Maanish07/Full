@@ -8,21 +8,15 @@ const Work = () => {
         <div className="p-6 hover:bg-gray-100 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out rounded">
           <h3 className="text-2xl font-semibold mb-4">Mern Development</h3>
           <p className="text-gray-600">
-            End-to-end Android app development using Java, Kotlin, and modern
-            frameworks.
+            Full-stack development using the MERN stack (MongoDB, Express,
+            React, and Node.js)
           </p>
         </div>
         <div className="p-6 hover:bg-gray-100 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out rounded">
-          <h3 className="text-xl font-semibold mb-4">UI/UX Design</h3>
+          <h3 className="text-xl font-semibold mb-4">Problem Solving</h3>
           <p className="text-gray-600">
-            Crafting intuitive and appealing user interfaces with Figma.
-          </p>
-        </div>
-        <div className="p-6 hover:bg-gray-100 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out rounded">
-          <h3 className="text-xl font-semibold mb-4">Web Development</h3>
-          <p className="text-gray-600">
-            Creating responsive and dynamic websites using modern web
-            technologies, ensuring a seamless user experience across devices.
+            Efficient problem-solving through mastering data structures and
+            algorithms, enabling optimal solutions to complex challenges
           </p>
         </div>
         <div className="p-6 hover:bg-gray-100 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out rounded">
@@ -34,13 +28,7 @@ const Work = () => {
             high-performance apps for both Android and iOS.
           </p>
         </div>
-        <div className="p-6 hover:bg-gray-100 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out rounded">
-          <h3 className="text-xl font-semibold mb-4">Firebase Solutions</h3>
-          <p className="text-gray-600">
-            Expertise in Firebase for real-time database management and cloud
-            storage.
-          </p>
-        </div>
+
         <div className="p-6 hover:bg-gray-100 hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out rounded">
           <h3 className="text-xl font-semibold mb-4">API Integration</h3>
           <p className="text-gray-600">

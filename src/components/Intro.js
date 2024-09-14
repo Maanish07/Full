@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Links } from "./Links";
 import Type from "./Type";
 import Window from "./Window";
+import { FaDownload } from "react-icons/fa";
 
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -87,6 +88,19 @@ function Intro() {
                   <Window />
                 </div>
               </div>
+              <a
+                href="https://drive.google.com/file/d/1HjIldwKg5fSP_z8dS9p72XvtRofT3I41/view?usp=drivesdk"
+                download="Manish_Kumar_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="relative inline-flex items-center justify-center px-8 py-3 mt-10 text-base font-semibold text-white bg-black rounded hover:shadow-lg hover:scale-105 transition-transform duration-300">
+                  <span className="z-10">Download CV</span>
+                  <span className="ml-2">
+                    <FaDownload />
+                  </span>
+                </button>
+              </a>
 
               <div className="mt-4 sm:mt-6 lg:mt-12 flex justify-center sm:justify-start">
                 <Links />
