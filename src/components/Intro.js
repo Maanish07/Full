@@ -94,12 +94,16 @@ function Intro() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="relative inline-flex items-center justify-center px-8 py-3 mt-10 text-base font-semibold text-white bg-black rounded hover:shadow-lg hover:scale-105 transition-transform duration-300">
-                  <span className="z-10">Download CV</span>
-                  <span className="ml-2">
-                    <FaDownload />
-                  </span>
-                </button>
+                <div className="text-center lg:text-left">
+                  {" "}
+                  {/* Responsive text alignment */}
+                  <button className="relative inline-flex items-center justify-center px-8 py-3 mt-10 text-base font-semibold text-white bg-black rounded hover:shadow-lg hover:scale-105 transition-transform duration-300">
+                    <span className="z-10">Download CV</span>
+                    <span className="ml-2">
+                      <FaDownload />
+                    </span>
+                  </button>
+                </div>
               </a>
 
               <div className="mt-4 sm:mt-6 lg:mt-12 flex justify-center sm:justify-start">
