@@ -11,16 +11,6 @@ const Footer = () => {
             Made With ❤ by Manish Kumar
           </p>
         </div>
-        <div className="fixed bottom-0 right-0 z-10">
-          <ScrollLink
-            to="header"
-            smooth={true}
-            aria-haspopup="false"
-            className="flex items-center text-black gap-2 py-4 transition-colors duration-300 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-          >
-            <FaCircleArrowUp className="w-10 h-10" />
-          </ScrollLink>
-        </div>
       </div>
     </>
   );

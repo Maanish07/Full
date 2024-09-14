@@ -13,6 +13,8 @@ import Canvaback from "./Canvaback";
 import Astro from "./Astro";
 import ThemeToggle from "./ThemeToggle";
 import { ThemeContext } from "../context/ThemeContext";
+import Counterup from "./Counterup";
+import Profilecount from "./Profilecount";
 
 const Home = () => {
   const { darkTheme } = useContext(ThemeContext);
@@ -20,6 +22,7 @@ const Home = () => {
     <Layout>
       <Intro />
       <Canvaback />
+      <Profilecount />
       <About />
       <Work />
 
