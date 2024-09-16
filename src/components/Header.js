@@ -1,150 +1,151 @@
-import React, { useContext, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { SiBuymeacoffee } from "react-icons/si";
 import { Link as ScrollLink } from "react-scroll";
-import { ThemeContext } from "../context/ThemeContext";
-import ThemeToggle from "./ThemeToggle";
 
-export default function NavbarBasic() {
+export default () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-  const [isToggleOpen, setIsToggleOpen] = useState(false);
-  const { darkTheme } = useContext(ThemeContext);
+  const [state, setState] = useState(false);
+
+  useEffect(() => {
+    document.onclick = (e) => {
+      const target = e.target;
+      if (!target.closest(".menu-btn")) setState(false);
+    };
+  }, []);
 
   return (
-    <>
-      {/*<!-- Component: Basic Navbar --> */}
-      <header
-        id="header"
-        className="border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 relative z-20 w-full overflow-x-hidden"
-      >
-        <div className="relative mx-auto w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
-          <nav
-            aria-label="main navigation"
-            className="flex h-[5.5rem] items-center justify-between font-medium text-slate-700"
-            role="navigation"
+    <nav
+      className={`bg-white pb-5 md:text-sm ${
+        state
+          ? "shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-2 md:mt-0"
+          : ""
+      }`}
+    >
+      <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
+        <div className="flex items-center justify-between py-5 md:block">
+          <Link
+            to="/"
+            className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
           >
-            <Link
-              to="/"
-              className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
+            <SiBuymeacoffee className="w-8 h-8" />
+            <h5
+              className="text-xl font-bold"
+              style={{
+                fontFamily: "'Caveat', cursive",
+                fontWeight: 900,
+                fontStyle: "normal",
+                color: "black",
+                fontSize: "36px",
+              }}
             >
-              <SiBuymeacoffee className="w-8 h-8" />
-
-              <h5
-                className="text-xl font-bold"
-                style={{
-                  fontFamily: "'Caveat', cursive",
-                  fontWeight: 900,
-                  fontStyle: "normal",
-                  color: "black",
-                  fontSize: "36px",
-                }}
-              >
-                Manish Kumar.
-              </h5>
-            </Link>
-            {/* Mobile trigger */}
+              Manish Kumar.
+            </h5>
+          </Link>
+          <div className="md:hidden">
             <button
-              className={`relative order-10 block h-10 w-10 self-center lg:hidden
-            ${
-              isToggleOpen
-                ? "visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(2)]:-rotate-45 [&_span:nth-child(3)]:w-0 "
-                : ""
-            }
-          `}
-              onClick={() => setIsToggleOpen(!isToggleOpen)}
-              aria-expanded={isToggleOpen ? "true" : "false"}
-              aria-label="Toggle navigation"
+              className="menu-btn text-gray-500 hover:text-gray-800"
+              onClick={() => setState(!state)}
             >
-              <div className="absolute left-1/2 top-1/2 w-6 -translate-x-1/2 -translate-y-1/2 transform">
-                <span
-                  aria-hidden="true"
-                  className="absolute block h-0.5 w-9/12 -translate-y-2 transform rounded-full bg-slate-900 transition-all duration-300"
-                ></span>
-                <span
-                  aria-hidden="true"
-                  className="absolute block h-0.5 w-6 transform rounded-full bg-slate-900 transition duration-300"
-                ></span>
-                <span
-                  aria-hidden="true"
-                  className="absolute block h-0.5 w-1/2 origin-top-left translate-y-2 transform rounded-full bg-slate-900 transition-all duration-300"
-                ></span>
-              </div>
-            </button>
-            {/* Navigation links */}
-            <ul
-              role="menubar"
-              aria-label="Select page"
-              className={`absolute left-0 top-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100 ${
-                isToggleOpen
-                  ? "visible opacity-100 backdrop-blur-sm"
-                  : "invisible opacity-0"
-              }`}
-            >
-              {isHomePage && (
-                <>
-                  <li role="none" className="flex items-stretch">
-                    <ScrollLink
-                      to="about"
-                      smooth={true}
-                      aria-haspopup="false"
-                      className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                    >
-                      About
-                    </ScrollLink>
-                  </li>
-                  <li role="none" className="flex items-stretch">
-                    <ScrollLink
-                      to="work"
-                      smooth={true}
-                      aria-haspopup="false"
-                      className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                    >
-                      Work
-                    </ScrollLink>
-                  </li>
-                  <li role="none" className="flex items-stretch">
-                    <ScrollLink
-                      to="education"
-                      smooth={true}
-                      aria-haspopup="false"
-                      className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                    >
-                      Education
-                    </ScrollLink>
-                  </li>
-                </>
+              {state ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
               )}
-              <li role="none" className="flex items-stretch">
-                <Link
-                  to="/project"
-                  className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                >
-                  Project
-                </Link>
-              </li>
-
-              <li role="none" className="flex items-stretch">
-                <Link
-                  to="/resume"
-                  className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                >
-                  Resume
-                </Link>
-              </li>
-
-              <li role="none" className="flex items-stretch">
-                <Link
-                  to="/contact"
-                  className="flex items-center text-black gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </nav>
+            </button>
+          </div>
         </div>
-      </header>
-    </>
+        <div
+          className={`flex-1 items-center mt-4 md:mt-0 md:flex ${
+            state ? "block" : "hidden"
+          }`}
+        >
+          <ul className="justify-center items-center  md:flex md:space-y-0 ">
+            {isHomePage && (
+              <>
+                <li role="none">
+                  <ScrollLink
+                    to="about"
+                    smooth={true}
+                    className="text-black text-xl py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 lg:px-8"
+                  >
+                    About
+                  </ScrollLink>
+                </li>
+                <li role="none">
+                  <ScrollLink
+                    to="work"
+                    smooth={true}
+                    className="text-black text-xl py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 lg:px-8"
+                  >
+                    Work
+                  </ScrollLink>
+                </li>
+                <li role="none">
+                  <ScrollLink
+                    to="education"
+                    smooth={true}
+                    className="text-black text-xl py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 lg:px-8"
+                  >
+                    Education
+                  </ScrollLink>
+                </li>
+              </>
+            )}
+            <li role="none">
+              <Link
+                to="/project"
+                className="text-black text-xl py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 lg:px-8"
+              >
+                Project
+              </Link>
+            </li>
+
+            <li role="none">
+              <Link
+                to="/resume"
+                className="text-black text-xl py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 lg:px-8"
+              >
+                Resume
+              </Link>
+            </li>
+
+            <li role="none">
+              <Link
+                to="/contact"
+                className="text-black text-xl py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 lg:px-8"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
-}
+};

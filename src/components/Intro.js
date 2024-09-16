@@ -4,6 +4,7 @@ import { Links } from "./Links";
 import Type from "./Type";
 import Window from "./Window";
 import { FaDownload } from "react-icons/fa";
+import Plane from "./Plane";
 
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -22,7 +23,10 @@ function Intro() {
   return (
     <>
       <div id="intro" className="max-w-7xl mx-auto sm:px-6 lg:px-8 px-4">
-        {" "}
+        <div className="flex justify-center md:justify-start">
+          <Plane />
+        </div>
+
         <div className="flex flex-col items-center justify-center">
           <div className="w-full">
             <div className="i-left">
