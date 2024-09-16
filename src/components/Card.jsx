@@ -6,7 +6,7 @@ const Card = ({ title, description, image ,url}) => {
   
 
   
-    <div className="relative w-72 sm:w-80 h-96 bg-white shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+    <div className="relative w-72 sm:w-80 h-75 bg-white shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
     <a href={url} target="_blank" rel="noopener noreferrer">
       <img src={image} alt={title} className="w-full h-40 sm:h-48 object-cover" />
       <div className="p-3 sm:p-4">
