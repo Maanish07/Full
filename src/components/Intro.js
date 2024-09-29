@@ -26,7 +26,7 @@ function Intro() {
         <div className="flex justify-center md:justify-start">
           <Plane />
         </div>
-
+        
         <div className="flex flex-col items-center justify-center">
           <div className="w-full">
             <div className="i-left">

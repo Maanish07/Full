@@ -15,6 +15,7 @@ import ThemeToggle from "./ThemeToggle";
 import { ThemeContext } from "../context/ThemeContext";
 import Counterup from "./Counterup";
 import Profilecount from "./Profilecount";
+import Workexprience from "./Workexprience";
 
 const Home = () => {
   const { darkTheme } = useContext(ThemeContext);
@@ -24,6 +25,7 @@ const Home = () => {
       <Canvaback />
       <Profilecount />
       <About />
+      <Workexprience/>
       <Work />
 
       <Timeline />

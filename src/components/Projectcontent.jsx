@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "./Layout";
 import Project from "./Project";
 import Slick from "./Slick";
+import { IoIosLink } from "react-icons/io";
+
 
 const Projectcontent = () =>{
 
@@ -33,6 +35,28 @@ const Projectcontent = () =>{
         },
         
       ];
+      const ProjectShopo = [
+        {
+          Name : 'Vip Clothing',
+          url : 'https://vipinners.com/'
+        },
+        {
+          Name : 'Guvit Jeweller',
+          url : 'https://www.guvit.co.in/'
+        },
+        {
+          Name : 'HeadGen.ai',
+          url : 'https://headgen.ai'
+        },
+        {
+          Name : 'The Bridge Store',
+          url : 'https://thebridgestore.in/'
+        },
+        {
+          Name : 'Miraluxury',
+          url : 'https://miraluxury.in'
+        }
+      ]
     return (
         <>
         <Layout>
@@ -50,6 +74,26 @@ const Projectcontent = () =>{
           ))}
         </div>
         
+        <section className="mb-6 pl-12">
+              <h2 className="text-2xl font-bold mb-4">Project Worked Upon</h2>
+              <div className="mb-6">
+                
+              <h3 className="font-bold text-lg">
+              As a Backend developer
+                </h3>
+              <ul className="list-disc ml-5 text-gray-600">
+  {ProjectShopo.map((project, index) => (
+    <li key={index} className="flex items-center">
+      <a href={project.url} className="flex items-center">
+        <IoIosLink className="mr-2" /> 
+        <span>{project.Name}</span>
+      </a>
+    </li>
+  ))}
+</ul>
+
+              </div>
+            </section>
 
         <Slick/>
         </Layout>
