@@ -33,6 +33,12 @@ const Projectcontent = () =>{
           image: '/Assets/Card/face.png',
           url : '/'
         },
+        {
+          title: 'Neat & Clean | MERN',
+          description: 'Create a dynamic, user-friendly MERN stack website that connects users with household services such as cleaning and mopping. Allow customers to easily browse a variety of services and book assistance seamlessly. Enhance the user experience with real-time updates and secure payment options, revolutionizing the way people manage their household tasks with convenience and comfort.',
+          image: '/Assets/Card/clean.png',
+          url : 'https://neat-clean.vercel.app/'
+        },
         
       ];
       const ProjectShopo = [

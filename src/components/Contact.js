@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 
 function Contact() {
   return (
-    <div id="about" className="max-w-7xl mx-auto px-4 sm:px-6 ">
+    <div
+      id="about"
+      className="max-w-7xl mx-auto px-4 sm:px-6 bg-black rounded-2xl text-white p-5"
+    >
       <div className="mt-8 sm:mt-10 md:mt-12 lg:mt-16">
         <h2 className="text-2xl font-bold mb-8">Contact.</h2>
         <div className="mt-4 sm:mt-6 md:mt-8 lg:mt-12">
@@ -50,12 +53,12 @@ function Contact() {
           </Link>
 
           <a href="tel:+917352380611" title="Call Now">
-            <button className="relative  inline-flex items-center justify-center px-8 py-3 mt-10 text-base font-semibold text-white bg-black rounded hover:shadow-lg hover:scale-105 transition-transform duration-300">
+            <button className="relative  inline-flex items-center justify-center px-8 py-3 mt-10 text-base font-semibold text-black bg-white rounded hover:shadow-lg hover:scale-105 transition-transform duration-300">
               <span className="z-10">Call Now</span>
             </button>
           </a>
         </div>
-        <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+        <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 text-black">
           <Links />
         </div>
       </div>
