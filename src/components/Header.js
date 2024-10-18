@@ -85,7 +85,7 @@ export default () => {
             state ? "block" : "hidden"
           }`}
         >
-          <ul className="justify-center items-center  md:flex md:space-y-0 ">
+          <ul className="justify-center items-center  md:flex md:space-y-0">
             {isHomePage && (
               <>
                 <li role="none">

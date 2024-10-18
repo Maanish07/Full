@@ -61,6 +61,10 @@ const Projectcontent = () =>{
         {
           Name : 'Miraluxury',
           url : 'https://miraluxury.in'
+        },
+        {
+          Name : 'Skin1004',
+          url : 'https://skin1004.ae'
         }
       ]
     return (
@@ -85,7 +89,7 @@ const Projectcontent = () =>{
               <div className="mb-6">
                 
               <h3 className="font-bold text-lg">
-              As a Backend developer
+              As a Custom shopify developer
                 </h3>
               <ul className="list-disc ml-5 text-gray-600">
   {ProjectShopo.map((project, index) => (
